@@ -4,17 +4,8 @@
     Страница контактов
 @endsection
 
-@if($errors->any())
-    <div class="alert alert-danger">
-        @foreach($errors->all() as $error)
-            <li>{{$error}}</li>
-        @endforeach
-    </div>
 
-@endif
-<?php
-echo "";
-?>
+
 
 @section("content")
     <form action={{ route("contact-form") }} method="post">
